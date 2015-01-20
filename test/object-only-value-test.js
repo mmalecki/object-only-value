@@ -4,23 +4,23 @@ var onlyValue = require('../');
 var obj = {
   foo: 42
 };
-var theKey;
+var theValue;
 
 assert.doesNotThrow(function() {
-  theKey = onlyValue(obj);
+  theValue = onlyValue(obj);
 });
 
-assert.equal(onlyValue, obj[Object.keys(obj)[0]]);
+assert.equal(theValue, obj[Object.keys(obj)[0]]);
 
 obj = {};
-assert.doesThrow(function() {
-  theKey = onlyValue(obj);
+assert.throws(function() {
+  theValue = onlyValue(obj);
 });
 
 obj = {
   foo: 42,
   bar: 24
 };
-assert.doesThrow(function() {
+assert.throws(function() {
   theValue = onlyValue(obj);
 });
