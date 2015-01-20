@@ -7,6 +7,13 @@ somehow ended up with more keys than one, it'd end in a disaster.
 Literally:
 
 ```js
+var assert = require('assert');
+
+module.exports = function(obj) {
+  var keys = Object.keys(obj);
+  assert.equal(keys.length, 1, 'Object should have exactly one key');
+  return obj[keys[0]];
+};
 ```js
 
 ## Installation
@@ -18,4 +25,13 @@ npm install object-only-value
 ## Usage
 
 ```js
+var onlyValue = require('object-only-value');
+var obj = { foo: 42 };
+var theValue = onlyValue(obj); // => 42
+
+obj = {};
+theValue = onlyValue(obj); // => throws
+
+obj = { foo: 42, bar: 24 };
+theValue = onlyValue(obj); // => throws
 ```
