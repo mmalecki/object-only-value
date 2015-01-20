@@ -4,6 +4,7 @@
   "description": "Assert that object has only one key and return its value",
   "author": "Maciej Małecki <me@mmalecki.com>",
   "license": "MIT",
+  "keywords": ["object", "only", "value", "assert"],
   "main": "./object-only-value.js",
   "repository": {
     "type": "git",
