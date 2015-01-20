@@ -1,5 +1,6 @@
 # object-only-value
 [![Build Status](https://travis-ci.org/mmalecki/object-only-value.png?branch=master)](https://travis-ci.org/mmalecki/object-only-value)
+
 Assert that object has only one key and return its value.
 
 For when you want to do `obj[Object.keys(obj)[0]]`, but know that if `obj`
