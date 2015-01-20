@@ -1,6 +1,6 @@
 {
   "name": "object-only-value",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Assert that object has only one key and return its value",
   "author": "Maciej Małecki <me@mmalecki.com>",
   "license": "MIT",
