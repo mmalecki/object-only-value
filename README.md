@@ -14,7 +14,7 @@ module.exports = function(obj) {
   assert.equal(keys.length, 1, 'Object should have exactly one key');
   return obj[keys[0]];
 };
-```js
+```
 
 ## Installation
 
